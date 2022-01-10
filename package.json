@@ -9,7 +9,9 @@
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "npx quasar dev",
-    "build": "npx quasar build"
+    "build": "npx quasar build",
+    "changelog:build": "node scripts/build-changelog.js",
+    "changelog:add": "node scripts/add-changelog-snippet.js"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
@@ -23,7 +25,8 @@
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
-    "eslint-webpack-plugin": "^2.4.0"
+    "eslint-webpack-plugin": "^2.4.0",
+    "prompts": "^2.4.2"
   },
   "browserslist": [
     "last 10 Chrome versions",
