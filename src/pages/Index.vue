@@ -1,10 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+    <p>Hi! Quote Your Friends is under development and not ready for public use yet. Check back later!</p>
   </q-page>
 </template>
 
