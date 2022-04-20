@@ -4,7 +4,16 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: () => import('pages/Index.vue') },
+    ]
+  },
+
+  {
+    path: '/fixquote',
+    component: () => import('layouts/FixquoteLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Fixquote.vue'), props: true },
+      { path: ':shortcode', component: () => import('pages/Fixquote.vue'), props: true }
     ]
   },
 
