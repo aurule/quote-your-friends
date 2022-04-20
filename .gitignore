@@ -31,3 +31,9 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+# Local testing databases
+.sqlite/
+
+# mac files
+.DS_STORE
