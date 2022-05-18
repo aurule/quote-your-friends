@@ -47,7 +47,7 @@
                 }"
               >
                 <template #item="{ element }">
-                  <q-item>
+                  <q-item dense>
                     <q-item-section side>
                       <q-icon name="menu" class="line-handle" />
                     </q-item-section>
@@ -71,12 +71,11 @@
                         dense
                       />
                     </q-item-section>
-                    <q-item-section>
+                    <q-item-section dense>
                       <q-input
                         v-model="element.content"
                         placeholder="Line text"
                         label="Line contents"
-                        dense
                         lazy-rules
                         :rules="[ val => val && val.length > 0 || 'Type what was said, or delete the line']"
                       />
